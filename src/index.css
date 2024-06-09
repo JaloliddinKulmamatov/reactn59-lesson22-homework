@@ -21,13 +21,7 @@ li {
   padding: 0 20px;
 }
 
-.loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-}
+
 
 @keyframes ldio-yzaezf3dcmj {
   0% {
@@ -196,6 +190,31 @@ main {
   padding-top: 100px;
 }
 
+.main__intro {
+  width: 100%;
+  height: 300px;
+  background-color: #a9a9a9;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 40px;
+}
+
+.main__intro h1 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.main__intro button {
+    width:  191px;
+    height:  61px;
+    padding: 17px 62px;
+    gap: 10px;
+    border-radius: 30px ;
+}
 
 .main__top {
   padding-top: 20px;
@@ -359,7 +378,12 @@ main {
   margin-top: 10px;
   width: 100%;
   padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 3px solid;
+  font-weight: 700;
 }
+
 
 @media (min-width: 500px) {
   nav ul {

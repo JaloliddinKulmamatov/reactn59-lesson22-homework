@@ -32,14 +32,6 @@ function App() {
 
   return (
     <div className="body">
-      {loading && (
-          <div class="loadingio-spinner-double-ring-2by998twmg8 loading" ><div class="ldio-yzaezf3dcmj">
-          <div></div>
-          <div></div>
-          <div><div></div></div>
-          <div><div></div></div>
-          </div></div>
-      )}
       <header>
         <nav>
           <div className="container navbar">
@@ -74,6 +66,10 @@ function App() {
       <main>
         <div className="container">
           <div className="main">
+            <div className="main__intro">
+              <h1>Lorem ipsum dolor sit amet, cons ecte tur adipiscing elit.</h1>
+              <button>Shop Now</button>
+            </div>
             <div className="main__top">
               <span>
                 <h1>LOGO</h1>
@@ -133,6 +129,14 @@ function App() {
               <h2>Headphones For You!</h2>
             </div>
             <div className="cards">
+          {loading && (
+          <div class="loadingio-spinner-double-ring-2by998twmg8 loading" ><div class="ldio-yzaezf3dcmj">
+          <div></div>
+          <div></div>
+          <div><div></div></div>
+          <div><div></div></div>
+          </div></div>
+      )}
               {product.map((p) => (
                 <div key={p.id} className="wrapper__card">
                   <div className="wrapper__card__top">
