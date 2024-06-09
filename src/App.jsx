@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [product, setProduct] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [count,setCount] = useState(0)
 
   const API__URL = "https://fakestoreapi.com/products";
 
@@ -94,8 +95,8 @@ function App() {
                   <p>Account</p>
                 </span>
                 <span>
-                  <img src={cartIcon} alt="Cart" />
-                  <p>Cart</p>
+                  <img  src={cartIcon} alt="Cart" />
+                  <p>Cart {count}</p>
                 </span>
               </span>
             </div>
@@ -145,6 +146,7 @@ function App() {
                     <span>
                       <p className="price">${p.price}</p>
                     </span>
+                    <button  onClick={ () => setCount(count + 1) } className='addCart'>Add to cart</button>
                   </div>
                 </div>
               ))}
